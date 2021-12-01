@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">LearnMaterialDesign</string>
+    <string name="page_title">page_title</string>
+    <string name="search">title_search</string>
+    <string name="label_1">fourth_element</string>
+    <string name="label_2">fourth_element</string>
+    <string name="label_3">fourth_element</string>
+    <string name="label_4">fourth_element</string>
+    <string name="label_5">fourth_element</string>
+    <string name="title">fifth\n element\n(card)</string>
 </resources>
