@@ -11,12 +11,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="second element"
+        android:textColor="@color/purple_700"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -27,10 +29,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.switchmaterial.SwitchMaterial
+        style="@style/TextUppercase"
         android:layout_width="263dp"
         android:layout_height="30dp"
         android:checked="true"
         android:text="third element"
+        android:theme="@style/ThemeOverlay.Switch"
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,6 +42,7 @@
         tools:ignore="MissingConstraints" />
 
     <LinearLayout
+
         android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -46,6 +51,7 @@
         tools:ignore="MissingConstraints">
 
         <CheckBox
+            style="@style/TextUppercase"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
@@ -53,6 +59,7 @@
             app:layout_constraintBottom_toBottomOf="parent" />
 
         <CheckBox
+            style="@style/TextUppercase"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/label_2"
@@ -61,6 +68,7 @@
 
         <CheckBox
             android:id="@+id/checkBox"
+            style="@style/TextUppercase"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/label_3"
@@ -70,6 +78,7 @@
 
         <CheckBox
             android:id="@+id/checkBox2"
+            style="@style/TextUppercase"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/label_4"
@@ -80,6 +89,7 @@
     </LinearLayout>
 
     <com.google.android.material.card.MaterialCardView
+
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:checkable="true"
@@ -92,13 +102,16 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toEndOf="@+id/linearLayout"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.838" >
+        app:layout_constraintVertical_bias="0.838">
+
         <TextView
+
+            style="@style/Theme.MyApp.TextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/title"
             android:textAppearance="?attr/textAppearanceHeadline6"
-            />
+            android:textColor="@color/purple_700" />
     </com.google.android.material.card.MaterialCardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
